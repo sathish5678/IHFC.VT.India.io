@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Sathish Kumar">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="This is a login page">
+	<title>IHFC</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-sm-center h-100">
+				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+					<div class="text-center my-5">
+						<img src="images/logo.png" alt="logo" width="200">
+					</div>
+					<div class="card shadow-lg">
+						<div class="card-body p-4">
+							<h1 class="fs-4 card-title fw-bold mb-4">Administrative Login</h1>
+							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="imageUpload">Upload Page</label>
+									<input id="imageUpload" type="file" class="form-control" name="profile_image"
+										accept="image/*">
+									<div id="imagePreview" class="mt-3"
+										style="border: 2px dashed #ddd; border-radius: 5px; padding: 10px; text-align: center;">
+										No image selected
+									</div>
+								</div>
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="name">UserName</label>
+									<input id="name" type="text" class="form-control" name="name" value="" required
+										autofocus>
+
+								</div>
+
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
+									<input id="email" type="email" class="form-control" name="email" value="" required>
+
+								</div>
+
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="password">Password</label>
+									<input id="password" type="password" class="form-control" name="password" required>
+
+								</div>
+
+								<label for="inputPassword5" class="form-label">Global Map description</label>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Leave a comment here"
+										id="floatingTextarea"></textarea>
+
+								</div>
+
+								<label for="inputPassword5" class="form-label">Detail Map description</label>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Leave a comment here"
+										id="floatingTextarea"></textarea>
+
+								</div>
+
+
+								<label for="inputPassword5" class="form-label">NDVI description</label>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Leave a comment here"
+										id="floatingTextarea"></textarea>
+
+								</div>
+
+								<label for="inputPassword5" class="form-label">NDRE description</label>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Leave a comment here"
+										id="floatingTextarea"></textarea>
+
+								</div>
+
+								<label for="inputPassword5" class="form-label">Rice Blast description</label>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Leave a comment here"
+										id="floatingTextarea"></textarea>
+
+								</div>
+
+								<label for="inputPassword5" class="form-label">Brown Spot description</label>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Leave a comment here"
+										id="floatingTextarea"></textarea>
+
+								</div>
+
+								<label for="inputPassword5" class="form-label">Blight description</label>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Leave a comment here"
+										id="floatingTextarea"></textarea>
+
+								</div>
+								<label for="inputPassword5" class="form-label">Temperature value :</label>
+								<input type="password" id="inputPassword5" class="form-control"
+									aria-describedby="passwordHelpBlock">
+
+								<label for="inputPassword5" class="form-label">pH value :</label>
+								<input type="password" id="inputPassword5" class="form-control"
+									aria-describedby="passwordHelpBlock">
+
+								<label for="inputPassword5" class="form-label">Soil value :</label>
+								<input type="password" id="inputPassword5" class="form-control"
+									aria-describedby="passwordHelpBlock">
+
+								<label for="inputPassword5" class="form-label">Humidity value :</label>
+								<input type="password" id="inputPassword5" class="form-control"
+									aria-describedby="passwordHelpBlock"> <br>
+
+
+
+
+								<div class="align-items-center d-flex">
+									<a href="Index.html" class="btn btn-secondary ms-auto me-2">
+										Back
+									</a>
+									<button type="submit" class="btn btn-primary ms-auto">
+										Submit
+									</button>
+								</div>
+						</div>
+						</form>
+					</div>
+
+				</div>
+				<div class="text-center mt-5 text-muted">
+					Copyright &copy; &mdash; VT-India
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+
+	<script src="js/login.js"></script>
+</body>
+
+</html>

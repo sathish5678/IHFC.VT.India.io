@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>IHFC</title>
+	<link rel="stylesheet" href="css/Main1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<input type="checkbox" id="check">
+	<label for="check">
+		<i class="fas fa-bars" id="btn"></i>
+		<i class="fas fa-times" id="cancel"></i>
+	</label>
+	<div class="sidebar">
+		<header>
+			<img src="images/logo.png" alt="My  Logo" class="logo">
+
+		</header>
+		<ul>
+			<li><a href="#weather">Weather Data</a></li>
+			<li><a href="#flied">Flied Map</a></li>
+			<li><a href="#health">Health Map</a></li>
+			<li><a href="#sensor">Sensor Data</a></li>
+			<li><a href="#plant">Plant Dieases</a></li>
+			<li><a href="#remarks">Expert Remarks</a></li>
+			<li><a href="#notification">Notification</a></li>
+			<li><a href="index.html"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+
+		</ul>
+	</div>
+
+	<section id="weather" class="weather">
+
+		<!-- Weather Box -->
+		<h2 class="text-center my-4  advanced-header">Weather Data</h2>
+		<div class="weather-cards">
+			<!-- Day 1 -->
+			<div class="weather-card">
+				<h3>Mon</h3>
+				<img src="images/cloud.png" alt="Weather Icon">
+				<p>32°C</p>
+				<p>Sunny</p>
+			</div>
+			<!-- Day 2 -->
+			<div class="weather-card">
+				<h3>Tue</h3>
+				<img src="images/cloud.png" alt="Weather Icon">
+				<p>34°C</p>
+				<p>Partly Cloudy</p>
+			</div>
+			<!-- Day 3 -->
+			<div class="weather-card">
+				<h3>Wed</h3>
+				<img src="images/cloud.png" alt="Weather Icon">
+				<p>33°C</p>
+				<p>Rainy</p>
+			</div>
+			<!-- Day 4 -->
+			<div class="weather-card">
+				<h3>Thu</h3>
+				<img src="images/cloud.png" alt="Weather Icon">
+				<p>31°C</p>
+				<p>Thunderstorm</p>
+			</div>
+			<!-- Day 5 -->
+			<div class="weather-card">
+				<h3>Fri</h3>
+				<img src="images/cloud.png" alt="Weather Icon">
+				<p>30°C</p>
+				<p>Cloudy</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="flied" class="flied">
+
+		<h2 class="text-center my-4  advanced-header">Flied Map</h2>
+		<div class="container my-4">
+			<div class="row">
+				<!-- Card 1 -->
+				<div class="col-md-6">
+					<div class="card h-100">
+						<img src="images/Flied map1.jpg" class="img-fluid"
+							style="width: 100%; height: 300px; object-fit: cover;">
+					</div>
+				</div>
+				<!-- Card 2 -->
+				<div class="col-md-6">
+					<div class="card h-100">
+						<img src="images/Flied map2.jpeg" class="img-fluid"
+							style="width: 100%; height: 300px; object-fit: cover;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</section>
+
+
+
+	<section id="health" class="health">
+		<h2 class="text-center my-4  advanced-header">Health Map</h2>
+		<div class="container my-4">
+			<div class="row">
+				<!-- Card 1 -->
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img src="images/health map1.jpeg" class="card-img-top" alt="Card 1">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">NDVI Index</h5>
+							<p class="card-text">NDVI Legend values range from +0.97 i.e Green to 0.06 i.e Red.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card 2 -->
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img src="images/health map2.png" class="card-img-top" alt="Card 2">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Chlorophyll Index</h5>
+							<p class="card-text">Legend Ranges from value 3.01 i.e (green) high Chlorophyll to -0.39
+								i.e
+								(red) dead plant or soil.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card 3 -->
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img src="images/health map3.png" class="card-img-top" alt="Card 3">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">NDRE Index</h5>
+							<p class="card-text">Legend values similar to NDVI range from +0.97 i.e Green for
+								healthy
+								plant to 0.06 Red for dead plant.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="sensor" class="sensor">
+		<h2 class="text-center my-4 advanced-header">Sensor Data</h2>
+
+
+		<div class="container my-4">
+			<div class="row row-cols-1 row-cols-md-4 g-3">
+				<!-- Card 1 -->
+				<div class="col">
+					<div class="card h-100 text-white bg-danger">
+						<div class="card-header">
+							<b> Temperature</b>
+						</div>
+						<div class="card-body text-center">
+							<blockquote class="blockquote mb-0">
+								<p>31 °C</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="col">
+					<div class="card h-100 text-white bg-success">
+						<div class="card-header">
+							<b>pH</b>
+						</div>
+						<div class="card-body text-center">
+							<blockquote class="blockquote mb-0">
+								<p>5.2</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card 3 -->
+				<div class="col">
+					<div class="card h-100 text-white" style="background-color: orange;">
+						<div class="card-header">
+							<b> Soil Moisture</b>
+						</div>
+						<div class="card-body text-center">
+							<blockquote class="blockquote mb-0">
+								<p>0.37</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card 4 -->
+				<div class="col">
+					<div class="card h-100" style="background-color: rgb(21, 146, 219); color: white;">
+						<div class="card-header">
+							<b> Humidity</b>
+						</div>
+						<div class="card-body text-center">
+							<blockquote class="blockquote mb-0">
+								<p>70%</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<section id="plant" class="plant">
+		<h2 class="text-center my-4  advanced-header">Plant Disease</h2>
+		<div class="container my-4">
+			<div class="row">
+				<!-- Card 1 -->
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img src="images/plant img1.jpg" class="card-img-top" alt="Card 1">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Rice Blast</h5>
+							<p class="card-text">Disease caused by Magaporthe oryzae fungus, destroys 60 million
+								people's food in a year.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card 2 -->
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img src="images/plant img2.jpg" class="card-img-top" alt="Card 2">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Brown Spot</h5>
+							<p class="card-text">Brown spot has been historically largely ignored as one of the most
+								common and damaging rice diseases.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card 3 -->
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img src="images/plant img3.jpg" class="card-img-top" alt="Card 3">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Blight</h5>
+							<p class="card-text">Blight caused by abiotic stresses such as high temperatures is
+								associated with panicle blighting.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="remarks" class="remarks">
+		<h2 class="text-center my-4  advanced-header">Expert Remarks</h2>
+		<div class="card">
+			<div class="card-header">
+				Remarks
+			</div>
+			<div class="card-body">
+				<blockquote class="blockquote mb-0">
+					<p>This experiment is conducted on 21st day of paddy cultivation (vegetative state), The growth
+						is
+						observed to be normal and weeds growth is perceived .pH level of the farm is 5.2 and
+						therefore
+						the nutrientrs levels to be taken care by the farmer. </p>
+
+				</blockquote>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="notification" class="notification">
+
+		<div class="container my-5">
+			<h2 class="text-center my-4  advanced-header">Notifications</h2>
+
+			<!-- Notification 1 -->
+			<div class="alert alert-success" role="alert">
+				<strong>Success!</strong> Your account has been successfully created.
+			</div>
+
+			<!-- Notification 2 -->
+			<div class="alert alert-info" role="alert">
+				<strong>Info!</strong> You have a new message in your inbox.
+			</div>
+
+			<!-- Notification 3 -->
+			<div class="alert alert-warning" role="alert">
+				<strong>Warning!</strong> Your subscription is about to expire.
+			</div>
+
+			<!-- Notification 4 -->
+			<div class="alert alert-danger" role="alert">
+				<strong>Error!</strong> There was a problem processing your payment.
+			</div>
+
+			<div class="row">
+				<!-- Card with Notifications -->
+				<div class="col-md-6">
+					<div class="card notification-card">
+						<div class="card-header">
+							<h5>System Notifications</h5>
+						</div>
+						<div class="card-body">
+							<ul class="list-group">
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span>Server restart scheduled</span>
+									<span class="badge bg-primary rounded-pill">2 mins ago</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span>New software update available</span>
+									<span class="badge bg-success rounded-pill">30 mins ago</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span>Security patch applied</span>
+									<span class="badge bg-info rounded-pill">1 hour ago</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Another Card with Notifications -->
+				<div class="col-md-6">
+					<div class="card notification-card">
+						<div class="card-header">
+							<h5>User Notifications</h5>
+						</div>
+						<div class="card-body">
+							<ul class="list-group">
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span>John Doe commented on your post</span>
+									<span class="badge bg-primary rounded-pill">5 mins ago</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span>New follower: Jane Smith</span>
+									<span class="badge bg-info rounded-pill">10 mins ago</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span>Message from Michael</span>
+									<span class="badge bg-warning rounded-pill">15 mins ago</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+</html>
+<script src="js/Main1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>

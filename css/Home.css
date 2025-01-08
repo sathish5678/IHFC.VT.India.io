@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/142/647/small_2x/drone-spraying-crops-in-a-lush-green-field-under-a-clear-sky-demonstrating-modern-agriculture-technology-and-innovation-photo.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+img {
+    height: 90px;
+    width: 300px;
+}

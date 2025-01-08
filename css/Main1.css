@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+
+.sidebar header {
+  font-size: 22px;
+  background-color: white;
+  line-height: 70px;
+  text-align: center;
+
+}
+
+.sidebar header .logo {
+  width: 190px;
+  /* Adjust the width as needed */
+  height: 50px;
+  /* Maintain aspect ratio by matching height */
+  padding-top: 0.5px;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  transition: .4s;
+}
+
+ul li:hover a {
+  padding-left: 50px;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 20px;
+  color: red;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+  left: 0;
+}
+
+#check:checked~label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked~label #cancel {
+  left: 195px;
+  position: fixed;
+
+}
+
+#check:checked~section {
+  margin-left: 250px;
+}
+
+section {
+  transition: all .5s;
+  padding: 100px 20px;
+}
+
+.weather-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.weather-container h2 {
+  margin: 0;
+  color: #333;
+}
+
+.weather-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.weather-card {
+  background-color: skyblue;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+.weather-card h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.weather-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card-img-top {
+  object-fit: cover;
+  /* Ensures images cover the area without distortion */
+  height: 200px;
+  /* Adjust height as needed */
+}
+
+.notification-card {
+  margin-bottom: 1rem;
+}
+
+.weather-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.weather-card {
+  background-color: skyblue;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 120px;
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: slideIn 0.8s ease forwards;
+}
+
+.weather-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.weather-card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.weather-card:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.weather-card:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.weather-card:nth-child(5) {
+  animation-delay: 1.1s;
+}
+
+.weather-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.advanced-header {
+  font-family: 'Poppins', sans-serif;
+  /* Modern font */
+  font-size: 2.5rem;
+  /* Larger font size */
+  font-weight: 700;
+  /* Bold text */
+  text-transform: uppercase;
+  /* Uppercase letters */
+  letter-spacing: 3px;
+  /* Spacing between letters */
+  color: #fff;
+  /* White text color */
+  background: linear-gradient(45deg, #ff6b6b, #ff9f43);
+  /* Gradient background */
+  padding: 20px 40px;
+  /* Padding around the text */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.advanced-header:hover {
+  transform: translateY(-5px);
+  /* Slight lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  /* Stronger shadow on hover */
+  background: linear-gradient(45deg, #ff9f43, #ff6b6b);
+  /* Reversed gradient on hover */
+}
